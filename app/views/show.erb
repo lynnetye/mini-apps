@@ -1,0 +1,9 @@
+<div class="show-note">
+  <% @all_notes.each_with_index do |note, index| %>
+    <p><%= "#{index + 1}. #{note.content}" %></p>
+
+    <form action="/notes/<%= "#{index}" %>/edit" method="get">
+      <input class="button" type="submit" value="Edit">
+    </form>
+  <% end %>
+</div>

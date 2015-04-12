@@ -1,0 +1,28 @@
+<% @all_notes.each_with_index do |note, index| %>
+  <% if @note == note %>
+    <div class="edit-erb">
+      <p><%= "#{index + 1}." %></p>
+      <form action="/notes/<%= index %>/edit" method="post">
+        <input type="hidden" name="_method" value="put">
+        <div class="edit-note">
+
+          <!-- update button -->
+          <input class="content" type="text" name="content" value="<%= @note.content %>"/>
+          <input class="update-button" type="submit" value="Update"/>
+
+          <!-- delete button -->
+          <input type="hidden" name="_method" value="delete">
+          <input class="delete-button" type="submit" value="Delete"/>
+        </div>
+      </form>
+    </div>
+  <% else %>
+    <div class="show-note">
+      <p><%= "#{index + 1}. #{note.content}" %></p>
+
+      <form action="/notes/<%= "#{index}" %>/edit" method="get">
+        <input type="submit" value="Edit">
+      </form>
+    </div>
+  <% end %>
+<% end %>

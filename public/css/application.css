@@ -1,10 +1,142 @@
-.container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+html {
+  background-color: #F5FBFF;
+  color: #1e3264;
+  font-family: Open Sans;
 }
 
-th {
-  text-align: left;
+/*header*/
+nav {
+  background-color: #1e3264;
+  text-align: center;
+  width: 100%;
+}
+
+nav > p {
+  color: #ffcdd2;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  padding: 20px 0px;
+}
+
+/*container*/
+.container {
+  background-color: #ffcdd2;
+  margin: 60px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 5px solid #1e3264;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*new notes*/
+.text-box {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-left: 20px;
+  height: 30px;
+  width: 400px;
+}
+
+.create-button {
+  background-color: #1e3264;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: #F5FBFF;
+  font-size: 16px;
+  height: 35px;
+  margin-left: 20px;
+  width: 120px;
+}
+
+/*show note*/
+.show-note > p, form {
+  display: inline-block;
+}
+
+.show-note p {
+  color: #1e3264;
+  font-size: 20px;
+  /*font-weight: 600;*/
+  line-height: 200%;
+  margin-left: 20px;
+}
+.show-note > p {
+  width: 85%;
+}
+.show-note > form {
+  width: 10%;
+}
+.show-note > form> input  {
+  background-color: #1e3264;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: #F5FBFF;
+  font-size: 14px;
+  height: 24px;
+  width: 40px;
+}
+
+.edit-erb > p, form {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.edit-erb > p {
+  margin-left: 20px;
+}
+
+.edit-erb .content {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.delete-note {
+  display: inline-block;
+}
+
+.edit-note > .content {
+  font-size: 20px;
+  width: 300px;
+}
+
+.edit-note > .update-button, .delete-button {
+  background-color: #1e3264;
+  background-color: #1e3264;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: #F5FBFF;
+  font-size: 14px;
+  height: 24px;
+  width: 70px;
+}
+
+.edit-note > .update-button {
+  margin-left: 85px;
+}
+
+.edit-note > .delete-button {
+  margin-left: 10px;
+}
+
+/*footer*/
+footer {
+  background-color: #1e3264;
+  position: absolute;
+  text-align: center;
+  bottom: 0%;
+  width: 100%;
+}
+
+footer > p {
+  color: #ffcdd2;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  padding: 20px 0px;
 }
