@@ -34,8 +34,3 @@ delete '/notes/:index/edit' do
   @note.destroy
   redirect '/'
 end
-
-# get '/info' do
-#   Demo.new(self).info
-# end
-
