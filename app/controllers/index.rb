@@ -1,5 +1,6 @@
 get '/' do
   @all_notes = Note.all
+  # don't need this because we made order by default in the model
   # (:order => [ :id.desc ], :limit => 20)
   @only_display = true
 
