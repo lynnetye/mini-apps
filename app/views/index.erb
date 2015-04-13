@@ -1,14 +1,14 @@
 <div class="container">
-  <h1>Make a new note:</h1>
+  <h1>Write it down:</h1>
 
   <form action="/new" method="post">
-    <input class="text-box" type="text" placeholder="  what do you need help remembering?" name="content">
+    <input class="text-box" type="text" placeholder="  if you don't want to forget..." name="content">
     <input class="create-button" type="submit" value="Make Note!">
   </form>
 </div>
 
 <div class="container">
-  <h1>Start making moves!</h1>
+  <h1>Your Notes to Self:</h1>
   <% if @only_display %>
     <%= erb :show, layout: false %>
   <% else %>
